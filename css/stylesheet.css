@@ -53,7 +53,6 @@
 }
 /* Cards Css End */
 
-
 /* Media Queries for pc Laptop  */
 @media(max-width: 1024px){
     .logo {
@@ -111,7 +110,7 @@
     .header {
         background-color: #009688;
         width: 90%;
-        height: 90px;
+        height: 60px;
         margin: 20px;
     }
     .logo{
