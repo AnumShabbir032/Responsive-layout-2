@@ -53,8 +53,9 @@
 }
 /* Cards Css End */
 
-/* Media Queries for Tablet  */
-@media (min-width: 768px) and (max-width: 1024px) {
+
+/* Media Queries for pc Laptop  */
+@media(max-width: 1024px){
     .logo {
         display: flex;
         flex-basis: 12%;
@@ -73,17 +74,45 @@
         width: 16rem;
         height: 19rem;
     } 
+    #box{
+        display: none;
+    }
+}
+/* End Media Queries for pc Laptop  */
+
+/* Media Queries for Tablet  */
+@media (max-width: 768px)  {
+    .logo {
+        display: flex;
+        flex-basis: 12%;
+    }  
+    .nav-bar {
+        display: flex;
+        flex-basis: 82%;
+        padding: 2rem;
+    } 
+    .cards {
+        display: flex;
+        justify-content: space-around;
+    }
+    #box {
+        display: flex;
+        width: 16rem;
+        height: 19rem;
+    } 
     #BOX{
         display: none;
     }
 }
 /* End Media Queries for Tablet  */
-/*Media Queries for Smartphones Mobiles (Portrait) */
-@media (min-width: 320px) and (max-width: 480px){
+
+/* Media Queries for Larger screen Smartphones Mobiles (Portrait) */
+@media (max-width: 576px){
     .header {
         background-color: #009688;
-        width: 68rem;
-        height: 60px;
+        width: 90%;
+        height: 90px;
+        margin: 20px;
     }
     .logo{
         display: none;
@@ -97,11 +126,5 @@
     #box{
         display: none;
     }
-    .cards {
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-        width: 68rem;
-    }
-}
+} 
 /* End Media Queries for Smartphones Mobiles (Portrait) */
